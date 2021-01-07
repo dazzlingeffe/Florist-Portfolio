@@ -1,0 +1,74 @@
+body {
+  background-color: floralwhite;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+#text {
+  grid-area: text;
+  height: 500px;
+  display: grid;
+  flex-direction: column;
+  align-content: center;
+}
+
+#name {
+  font-weight: 600;
+}
+
+#title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 52px;
+  margin: 15px 0px;
+}
+
+#description {
+  font-size: 12px;
+}
+
+hr {
+  margin: 10px auto;
+  width: 40px;
+  border: 2px solid black;
+}
+
+#section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "text pic1"
+    "text pic2";
+  background-color: white;
+  height: 500px;
+  width: 570px;
+  box-shadow: 0px 0px 20px 1px #d0926839;
+}
+
+#pic1 {
+  height: 250px;
+  width: 250px;
+  justify-self: end;
+  grid-area: pic1;
+}
+#pic2 {
+  height: 250px;
+  width: 250px;
+  justify-self: end;
+  grid-area: pic2;
+}
