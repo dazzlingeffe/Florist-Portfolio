@@ -1,3 +1,6 @@
+html {
+  font-size: 16px;
+}
 body {
   background-color: floralwhite;
   margin: 0;
@@ -11,7 +14,6 @@ main {
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
   text-align: center;
 }
 
@@ -21,7 +23,7 @@ p {
 
 #text {
   grid-area: text;
-  height: 500px;
+  height: inherit;
   display: grid;
   flex-direction: column;
   align-content: center;
@@ -33,12 +35,13 @@ p {
 
 #title {
   font-family: 'Oswald', sans-serif;
-  font-size: 52px;
+  font-size: 3.2rem;
   margin: 15px 0px;
+  line-height: 135%;
 }
 
 #description {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 hr {
@@ -73,15 +76,31 @@ hr {
   width: inherit;
 }
 
-#pic1 {
+#pic1, #pic2 {
   height: 250px;
   width: 250px;
   justify-self: end;
-  grid-area: pic1;
 }
-#pic2 {
-  height: 250px;
-  width: 250px;
-  justify-self: end;
-  grid-area: pic2;
+
+#pic1 { grid-area: pic1; }
+
+#pic2 { grid-area: pic2; }
+
+@media (max-width: 425px) {
+  html { font-size: 8px; }
+  #section, #delimeters {
+    height: 210px;
+    width: 250px;
+  }
+  #pic1, #pic2 {
+    height: 105px;
+    width: 105px;
+  }
+  #title { margin: 5px 0; }
+  #text { padding: 0 7px; }
+  hr {
+    margin: 5px auto;
+    width: 20px;
+    border: 1px solid black;
+  }
 }
