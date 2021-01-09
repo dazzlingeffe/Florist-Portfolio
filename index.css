@@ -89,12 +89,12 @@ hr {
 @media (max-width: 425px) {
   html { font-size: 8px; }
   #section, #delimeters {
-    height: 240px;
-    width: 280px;
+    height: 260px;
+    width: 300px;
   }
   #pic1, #pic2 {
-    height: 105px;
-    width: 105px;
+    height: 130px;
+    width: 130px;
   }
   #title { margin: 5px 0; }
   #text { padding: 0 7px; }
