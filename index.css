@@ -128,7 +128,6 @@ a.nav-item {
 }
 
 main {
-  height: 100vh;
 	padding: 20px;
 	padding-top: 55px;
 }
@@ -149,13 +148,6 @@ ul {
 	padding: 0;
 }
 
-.gallery-slider {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-	box-sizing: border-box;
-}
-
 .thumbnails {
 	display: flex;
 	flex-direction: column;
@@ -164,30 +156,20 @@ ul {
 
 .thumbnails li {
 	flex: auto;
-}
-
-.thumbnails a {
-	display: block;
+	cursor: pointer;
 }
 
 .thumbnails img {
 	width: 30vmin;
 	height: 20vmin;
 	object-fit: cover;
-	object-position: bottom;
+	object-position: center;
 }
 
 .slides {
 	overflow: hidden;
   width: 75vmin;
   height: 100vmin;
-}
-
-.slides li {
-	width: 75vmin;
-	height: 100vmin;
-	position: absolute;
-	z-index: 1;
 }
 
 .slides img {
@@ -201,33 +183,6 @@ ul {
   height: auto !important;
 	margin: 2px;
 	cursor: pointer;
-}
-
-.slides li:target {
-  z-index: 3;
-  -webkit-animation: slide 1s 1;
-}
-
-.slides li:not(:target) {
-  -webkit-animation: hidden 1s 1;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes hidden {
-  0% {
-    z-index: 2;
-  }
-  100% {
-    z-index: 2;
-  }
 }
 
 @media (max-width: 1200px) {
