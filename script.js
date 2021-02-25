@@ -1,10 +1,28 @@
 let openPic = function(e) {
 	let gallerySection = document.getElementById('gallery');
+	let main = document.querySelector('main');
 	gallerySection.id = 'container';
 	
-	document.querySelector('main').style.paddingTop = '70px';
+	main.style.paddingTop = '80px';
+	main.style.display = 'flex';
+	main.style.justifyContent = 'space-evenly';
+	gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');
+	var elem = document.createElement('img');
+	elem.src = 'icons/prev.svg';
+	elem.classList.add('gallery-nav-icon');
+	document.getElementById('prev').appendChild(elem);
 	
-	gallerySection.insertAdjacentHTML('beforeEnd', '<div class="image-nav"><ul><li><button id="prev">previous</button></li><li><button id="next">next</button></li></ul></div>');
+	gallerySection.insertAdjacentHTML('afterend', '<button id="cancel"></button>');
+	elem = document.createElement('img');
+	elem.src = 'icons/cancel.svg';
+	elem.style.height = '18px';
+	elem.style.width = '18px';
+	document.getElementById('cancel').appendChild(elem);	
+	gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next"></button>');
+	elem = document.createElement('img');
+	elem.src = 'icons/next.svg';
+	elem.classList.add('gallery-nav-icon');	document.getElementById('next').appendChild(elem);
+	
 	
 	document.querySelectorAll('.gallery-item').forEach(item => {item.className = 'image-view'});
 	e.target.className += ' active';
