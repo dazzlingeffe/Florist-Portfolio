@@ -1,34 +1,45 @@
+let gallerySection = document.getElementById('gallery');
+let main = document.querySelector('main');
+let prevBtn, nextBtn, cancelBtn;
+
 let openPic = function(e) {
-	let gallerySection = document.getElementById('gallery');
-	let main = document.querySelector('main');
+	//style existing elements
 	gallerySection.id = 'container';
 	
-	main.style.paddingTop = '80px';
+//	main.style.paddingTop = '80px';
 	main.style.display = 'flex';
-	main.style.justifyContent = 'space-evenly';
+	main.style.justifyContent = 'center';
+	
+	//add prev-btn
 	gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');
 	var elem = document.createElement('img');
 	elem.src = 'icons/prev.svg';
 	elem.classList.add('gallery-nav-icon');
 	document.getElementById('prev').appendChild(elem);
 	
+	//add cancel-btn
 	gallerySection.insertAdjacentHTML('afterend', '<button id="cancel"></button>');
 	elem = document.createElement('img');
 	elem.src = 'icons/cancel.svg';
-	elem.style.height = '18px';
-	elem.style.width = '18px';
-	document.getElementById('cancel').appendChild(elem);	
+	elem.style.height = '25px';
+	elem.style.width = '25px';
+	document.getElementById('cancel').appendChild(elem);
+	
+	//add next-btn
 	gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next"></button>');
 	elem = document.createElement('img');
 	elem.src = 'icons/next.svg';
 	elem.classList.add('gallery-nav-icon');	document.getElementById('next').appendChild(elem);
 	
-	
+	//add active class on first img
 	document.querySelectorAll('.gallery-item').forEach(item => {item.className = 'image-view'});
 	e.target.className += ' active';
 
-	let prevBtn = document.getElementById('prev');
-	let nextBtn = document.getElementById('next');
+	//btns-activity
+	prevBtn = document.getElementById('prev');
+	nextBtn = document.getElementById('next');
+	cancelBtn = document.getElementById('cancel');
+	
 	let imgCount = document.querySelectorAll('.image-view').length;
 
 	prevBtn.addEventListener('click', function() {
@@ -51,6 +62,32 @@ let openPic = function(e) {
 			document.getElementById(parseInt(currentId, 10) + 1).classList.add('active');
 		}
 	});
+	cancelBtn.addEventListener('click', function() {
+		gallerySection.id = 'gallery';
+
+		main.style.paddingTop = '55px';
+		main.style.display = 'block';
+		main.style.justifyContent = 'none';
+
+		prevBtn.remove();
+		nextBtn.remove();
+		cancelBtn.remove();
+
+		document.querySelectorAll('.image-view').forEach(item => {item.className = 'gallery-item'});
+	});
 }
 
 document.querySelectorAll('.gallery-item').forEach(item => { item.addEventListener('click', openPic)});
+//	cancelBtn.addEventListener('click', function() {
+//		gallerySection.id = 'gallery';
+//
+//		main.style.paddingTop = '55px';
+//		main.style.display = 'block';
+//		main.style.justifyContent = 'none';
+//
+//		prevBtn.remove();
+//		nextBtn.remove();
+//		cancelBtn.style.display = 'none';
+//
+//		document.querySelector('.active').classList.remove('active');
+//	});
