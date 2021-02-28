@@ -12,10 +12,6 @@ let openPic = function(e) {
 	
 	//add prev-btn
 	gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');
-	var elem = document.createElement('img');
-	elem.src = 'icons/prev.svg';
-	elem.classList.add('gallery-nav-icon');
-	document.getElementById('prev').appendChild(elem);
 	
 	//add cancel-btn
 	gallerySection.insertAdjacentHTML('afterend', '<button id="cancel"></button>');
@@ -27,9 +23,6 @@ let openPic = function(e) {
 	
 	//add next-btn
 	gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next"></button>');
-	elem = document.createElement('img');
-	elem.src = 'icons/next.svg';
-	elem.classList.add('gallery-nav-icon');	document.getElementById('next').appendChild(elem);
 	
 	//add active class on first img
 	document.querySelectorAll('.gallery-item').forEach(item => {item.className = 'image-view'});
@@ -78,16 +71,3 @@ let openPic = function(e) {
 }
 
 document.querySelectorAll('.gallery-item').forEach(item => { item.addEventListener('click', openPic)});
-//	cancelBtn.addEventListener('click', function() {
-//		gallerySection.id = 'gallery';
-//
-//		main.style.paddingTop = '55px';
-//		main.style.display = 'block';
-//		main.style.justifyContent = 'none';
-//
-//		prevBtn.remove();
-//		nextBtn.remove();
-//		cancelBtn.style.display = 'none';
-//
-//		document.querySelector('.active').classList.remove('active');
-//	});

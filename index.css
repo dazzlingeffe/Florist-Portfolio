@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Mikado';
+	src: url('fonts/Mikado.ttf') format('truetype');
+}
+
 html {
   font-size: 16px;
 	margin: 0;
@@ -34,7 +39,20 @@ header {
 	border-bottom: 2px solid #6B705C;
 }
 
+#logo {
+	font-family: 'Mikado';
+	text-transform: none;
+	font-size: 2.4em;
+	width: 168px;
+}
+
+#place, #burger {
+	width: 168px;
+}
+
 #burger {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .nav {
@@ -131,7 +149,7 @@ a.nav-item {
 
 main {
 	padding: 20px;
-	padding-top: 55px;
+	padding-top: 60px;
 }
 
 #gallery {
@@ -214,17 +232,24 @@ button {
 	height: 30px;
 	width: 30px;
 	position: absolute;
-	top: 55px;
+	top: 60px;
 	right: 20px;
 	padding: 2px;
 }
 
 .gallery-nav-btn {
-	min-width: 70px;
+	position: absolute;
+	top: 60px;
+	height: 100vh;
+	width: 50vw;
 }
 
-.gallery-nav-btn:hover {
-	background-color: #DDBEA999;
+#prev {
+	left: 0;
+}
+
+#next {
+	right: 0;
 }
 
 @keyframes fadeImg {
@@ -243,6 +268,13 @@ button {
   -webkit-column-count: 4;
   column-count:         4;
   }
+	main {
+		height: 100vh;
+		align-items: center;
+	}
+	.image-view {
+		max-width: 70vw;
+	}
 }
 @media (max-width: 1000px) {
   #gallery {
