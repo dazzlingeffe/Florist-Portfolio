@@ -42,12 +42,13 @@ header {
 #logo {
 	font-family: 'Mikado';
 	text-transform: none;
-	font-size: 2.4em;
-	width: 168px;
+	font-size: 2em;
+	font-weight: bold;
+	width: 140px;
 }
 
 #place, #burger {
-	width: 168px;
+	width: 140px;
 }
 
 #burger {
@@ -64,7 +65,7 @@ header {
 	left: -100%;
 	width: 100vw;
 	height: 100vh;
-	background-color: #ffffff99;
+	background-color: #ffffffaa;
 	margin-top: 50px;
 	transition-duration: .4s;
 	text-align: center;
@@ -85,7 +86,7 @@ li.nav-item {
 }
 
 a.nav-item:hover {
-	background-color: #B7B7A49a;
+	background-color: #cb997eaa;
 }
 
 a.nav-item {
