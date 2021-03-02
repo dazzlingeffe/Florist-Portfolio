@@ -14,28 +14,34 @@ let openPic = function(e) {
 	main.style.paddingBottom = '5px';
 	
 	//add prev-btn
-	gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');
+	if (document.getElementById('prev') === null) {
+		gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');
+		prevBtn = document.getElementById('prev');
+	}
+	
 	
 	//add cancel-btn
-	gallerySection.insertAdjacentHTML('afterend', '<button id="cancel"></button>');
-	elem = document.createElement('img');
-	elem.src = 'icons/cancel.svg';
-	elem.style.height = '25px';
-	elem.style.width = '25px';
-	document.getElementById('cancel').appendChild(elem);
+	if (document.getElementById('cancel') === null) {
+		gallerySection.insertAdjacentHTML('afterend', '<button id="cancel"></button>');
+		elem = document.createElement('img');
+		elem.src = 'icons/cancel.svg';
+		elem.style.height = '25px';
+		elem.style.width = '25px';
+		document.getElementById('cancel').appendChild(elem);
+		cancelBtn = document.getElementById('cancel');
+	}
 	
 	//add next-btn
-	gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next"></button>');
+	if (document.getElementById('next') === null) {
+		gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next"></button>');
+		nextBtn = document.getElementById('next');
+	}
 	
 	//add active class on first img
 	document.querySelectorAll('.gallery-item').forEach(item => {item.className = 'image-view'});
 	e.target.className += ' active';
 
-	//btns-activity
-	prevBtn = document.getElementById('prev');
-	nextBtn = document.getElementById('next');
-	cancelBtn = document.getElementById('cancel');
-	
+	//btns-activity	
 	let imgCount = document.querySelectorAll('.image-view').length;
 
 	prevBtn.addEventListener('click', function() {
