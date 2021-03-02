@@ -30,7 +30,7 @@ header {
 	top: 0;
 	display: flex;
 	height: 50px;
-	padding: 5px 15px;
+	padding: 5px 20px;
 	background-color: #fff;
 	align-items: center;
 	justify-content: space-between;
@@ -165,7 +165,7 @@ main {
 
 #container {
 	max-width: 90vw;
-	max-height: 85vh;
+	max-height: 80vh;
 /*  margin: 0 auto;*/
 /*  padding: 50px;*/
 	display: flex;
@@ -187,8 +187,8 @@ ul {
 }
 
 .image-view {
-	max-height: 85vh;
-/*	max-width: 100%;*/
+	max-height: 80vh;
+	max-width: 90vw;
   display: none;
   box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
 }
@@ -241,7 +241,8 @@ button {
 .gallery-nav-btn {
 	position: absolute;
 	top: 60px;
-	height: 100vh;
+	height: 100%;
+	max-height: 85vh;
 	width: 50vw;
 }
 
@@ -278,6 +279,9 @@ button {
   }
 }
 @media (max-width: 800px) {
+	html {
+		font-size: 12px;
+	}
   #gallery {
   -moz-column-count:    2;
   -webkit-column-count: 2;
@@ -288,7 +292,7 @@ button {
 		align-items: center;
 	}
 	.image-view {
-		max-width: 90vw;
+		max-width: 100%;
 	}
 }
 @media (max-width: 400px) {

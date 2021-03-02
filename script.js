@@ -11,7 +11,7 @@ let openPic = function(e) {
 	main.style.justifyContent = 'center';
 	main.style.alignItems = 'center';
 	main.style.height = '100vh';
-	main.style.paddingBottom = '5px';
+	main.style.paddingBottom = '0';
 	
 	//add prev-btn
 	if (document.getElementById('prev') === null) {
