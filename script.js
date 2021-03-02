@@ -9,6 +9,9 @@ let openPic = function(e) {
 //	main.style.paddingTop = '80px';
 	main.style.display = 'flex';
 	main.style.justifyContent = 'center';
+	main.style.alignItems = 'center';
+	main.style.height = '100vh';
+	main.style.paddingBottom = '5px';
 	
 	//add prev-btn
 	gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');

@@ -269,13 +269,6 @@ button {
   -webkit-column-count: 4;
   column-count:         4;
   }
-	main {
-		height: 100vh;
-		align-items: center;
-	}
-	.image-view {
-		max-width: 70vw;
-	}
 }
 @media (max-width: 1000px) {
   #gallery {
@@ -290,6 +283,13 @@ button {
   -webkit-column-count: 2;
   column-count:         2;
   }
+	main {
+		height: 100vh;
+		align-items: center;
+	}
+	.image-view {
+		max-width: 90vw;
+	}
 }
 @media (max-width: 400px) {
   #gallery {
