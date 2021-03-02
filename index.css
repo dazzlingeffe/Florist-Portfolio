@@ -182,7 +182,7 @@ ul {
 .gallery-item {
 	width: 100% !important;
   height: auto !important;
-	margin: 2px;
+	margin-top: 2px;
 	cursor: pointer;
 }
 
