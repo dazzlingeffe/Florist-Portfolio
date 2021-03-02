@@ -10,7 +10,7 @@ let openPic = function(e) {
 	main.style.display = 'flex';
 	main.style.justifyContent = 'center';
 	main.style.alignItems = 'center';
-	main.style.height = '100vh';
+	main.style.height = '95vh';
 	main.style.paddingBottom = '0';
 	
 	//add prev-btn

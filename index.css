@@ -288,7 +288,7 @@ button {
   column-count:         2;
   }
 	main {
-		height: 100vh;
+		height: 95vh;
 		align-items: center;
 	}
 	.image-view {
