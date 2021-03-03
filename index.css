@@ -302,32 +302,64 @@ button {
   column-count:         1;
   }
 }
+
 #figure {
-	height: 400px;
-	width: 250px;
 	font-size: 1em;
-	margin: 0;
-	margin-left: 30px;
+	padding: 20px;
+	margin: 10px 20px;
+	background-color: #fff3eb;
+/*	opacity: 0.4;*/
+	background-size: 5px 5px;
+	background-image: repeating-linear-gradient(45deg, #b7b7a499 0, #b7b7a499 0.5px, #fff3eb 0, #fff3eb 50%);
+	flex: 0 1 30%;
 }
 
 #figure-img {
 	width: 100%;
+	max-width: 320px;
 	border-radius: 50%;
-	box-shadow: 1px 1px 0 6px #cb997eaa;
+	box-shadow: 1px 1px 0 6px #cb997e99;
 	margin-bottom: 30px;
 }
 
-#info-item {
-	margin-top: 30px;
+hr {
+	width: 60px;
+	border-color: #232323;
+	border-bottom: none;
+}
+
+.info-item {
+	margin-top: 20px;
 }
 
 #main-about {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
-.about {
-	width: 320px;
+#about {
+/*	width: 70vw;*/
+/*	max-width: 500px;*/
+	margin: 10px 20px;
+	flex: 1 0 40%;
+	order: -1;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 2em;
+}
+
+.p-about {
 	text-align: justify;
 	text-indent: 20px;
+	line-height: 1.5;
+}
+
+#hobby, #skills {
+	background-color: #fff3eb;
+/*	opacity: 0.4;*/
+	background-size: 5px 5px;
+	background-image: repeating-linear-gradient(45deg, #b7b7a499 0, #b7b7a499 0.5px, #fff3eb 0, #fff3eb 50%);
 }
