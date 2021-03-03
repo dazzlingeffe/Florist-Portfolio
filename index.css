@@ -16,7 +16,6 @@ body {
   background-color: #FFF3EB;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 	color: #232323;
 }
@@ -37,6 +36,7 @@ header {
 	width: 100vw;
 	z-index: 1;
 	border-bottom: 2px solid #6B705C;
+  text-transform: uppercase;
 }
 
 #logo {
@@ -288,7 +288,7 @@ button {
   column-count:         2;
   }
 	main {
-		height: 95vh;
+		height: 90vh;
 		align-items: center;
 	}
 	.image-view {
@@ -301,4 +301,33 @@ button {
   -webkit-column-count: 1;
   column-count:         1;
   }
+}
+#figure {
+	height: 400px;
+	width: 250px;
+	font-size: 1em;
+	margin: 0;
+	margin-left: 30px;
+}
+
+#figure-img {
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 0 6px #cb997eaa;
+	margin-bottom: 30px;
+}
+
+#info-item {
+	margin-top: 30px;
+}
+
+#main-about {
+	display: flex;
+	justify-content: space-around;
+}
+
+.about {
+	width: 320px;
+	text-align: justify;
+	text-indent: 20px;
 }
