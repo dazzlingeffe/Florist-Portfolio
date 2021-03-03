@@ -305,13 +305,8 @@ button {
 
 #figure {
 	font-size: 1em;
-	padding: 20px;
-	margin: 10px 20px;
-	background-color: #fff3eb;
-/*	opacity: 0.4;*/
-	background-size: 5px 5px;
-	background-image: repeating-linear-gradient(45deg, #b7b7a499 0, #b7b7a499 0.5px, #fff3eb 0, #fff3eb 50%);
-	flex: 0 1 30%;
+	flex: 1 0 30%;
+	text-align: center;
 }
 
 #figure-img {
@@ -328,7 +323,7 @@ hr {
 	border-bottom: none;
 }
 
-.info-item {
+.info-item, .hobby-item, .skill-item {
 	margin-top: 20px;
 }
 
@@ -342,8 +337,9 @@ hr {
 /*	width: 70vw;*/
 /*	max-width: 500px;*/
 	margin: 10px 20px;
-	flex: 1 0 40%;
+	flex: 2 0 50%;
 	order: -1;
+	font-size: 1.2em;
 }
 
 h1 {
@@ -357,9 +353,22 @@ h1 {
 	line-height: 1.5;
 }
 
-#hobby, #skills {
+#hobby, #skills, #figure {
+	margin: 10px 20px;
+	padding: 20px;
 	background-color: #fff3eb;
 /*	opacity: 0.4;*/
 	background-size: 5px 5px;
-	background-image: repeating-linear-gradient(45deg, #b7b7a499 0, #b7b7a499 0.5px, #fff3eb 0, #fff3eb 50%);
+	background-image: repeating-linear-gradient(45deg, #b7b7a466 0, #b7b7a466 0.5px, #fff3eb 0, #fff3eb 50%);
+}
+
+#edu {
+	margin: 10px 20px;
+	flex: 2 0 30%;
+}
+#hobby {
+	flex: 0 1 25%;
+}
+#skills {
+	flex: 1 1 40%;
 }
