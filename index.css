@@ -305,7 +305,7 @@ button {
 
 #figure {
 	font-size: 1em;
-	flex: 1 0 30%;
+	flex: 1 0 25%;
 	text-align: center;
 }
 
@@ -337,7 +337,7 @@ hr {
 /*	width: 70vw;*/
 /*	max-width: 500px;*/
 	margin: 10px 20px;
-	flex: 2 0 50%;
+	flex: 2 0 60%;
 	order: -1;
 	font-size: 1.2em;
 }
@@ -364,11 +364,11 @@ h1 {
 
 #edu {
 	margin: 10px 20px;
-	flex: 2 0 30%;
+	flex: 2 0 40%;
 }
 #hobby {
 	flex: 0 1 25%;
 }
 #skills {
-	flex: 1 1 40%;
+	flex: 0 1 25%;
 }
