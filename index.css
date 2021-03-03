@@ -375,6 +375,9 @@ h1 {
 		flex: none;
 		width: 85vw;
 	}
+	#figure {
+		font-size: 1.2em;
+	}
 }
 @media (max-width: 400px) {
   #gallery {
