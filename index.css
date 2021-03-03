@@ -366,9 +366,10 @@ h1 {
 	margin: 10px 20px;
 	flex: 2 0 40%;
 }
-#hobby {
+#hobby, #skills {
 	flex: 0 1 25%;
 }
-#skills {
-	flex: 0 1 25%;
+#skills-list, #hobby-list {
+	list-style: circle;
+	list-style-position: inside;
 }
