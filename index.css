@@ -220,6 +220,7 @@ button {
 	color: #232323;
 	background: none;
 	font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
 	padding: 10px;
 	margin: 5px;
 	text-transform: uppercase;
@@ -349,6 +350,8 @@ h1 {
 #mail-form {
 	display: flex;
 	flex-wrap: wrap;
+	max-width: 600px;
+	width: 520px;
 }
 
 .input-field, textarea {
@@ -358,7 +361,14 @@ h1 {
 	height: 50px;
 	width: 250px;
 	margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
 	outline: none;
+}
+
+.input-field::placeholder, textarea::placeholder {
+	font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
@@ -404,12 +414,21 @@ textarea {
 		order: 0;
 		font-size: 1.1em;
 	}
-	#figure, #about, #hobby, #edu, #skills {
+	#figure, #about, #hobby, #edu, #skills, #socials {
 		flex: none;
 		width: 85vw;
 	}
 	#figure {
 		font-size: 1.2em;
+	}
+	#mail-form {
+		width: 265px;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		max-width: none;
+	}
+	textarea {
+		width: 250px;
 	}
 }
 @media (max-width: 400px) {
