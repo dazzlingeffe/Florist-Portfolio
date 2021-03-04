@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+		<script src="https://kit.fontawesome.com/3d0d4c7122.js" crossorigin="anonymous"></script>
     <title>Florist Portfolio</title>
   </head>
   <body>
@@ -26,5 +27,33 @@
 				</nav>
 			</div>
 		</header>
+		<main id="main-cont">
+			<section id="socials">
+				<i class="far fa-comment" style="font-size: 2.5em;"></i>
+				<hr style="margin: 30px 0;">
+				<h1>Контакты</h1>
+				<p>м.Алтуфьево, Москва</p>
+				<p>e-mail: <a href="mailto: irusya9@mail.ru?subject=WORKMAIL">irusya9@mail.ru</a></p>
+				<p>телефон: <a href="tel:+7 (977) 124-78-79">+7 (977) 124-78-79</a></p>
+				<hr style="margin: 30px 0;">
+				<a class="social-link" href="tg://resolve?domain=dazzlingeffy"><i class="fab fa-telegram-plane"></i></a>
+				<a class="social-link" href="whatsapp://send?phone=79771247879"><i class="fab fa-whatsapp"></i></a>
+				<a class="social-link" href="https://www.instagram.com/dazzling.effy"><i class="fab fa-instagram"></i></a>
+				<a class="social-link" href="https://dazzlingeffy.tumblr.com"><i class="fab fa-tumblr"></i></a>
+			</section>
+			<section id="reachme">
+				<i class="fas fa-at" style="font-size: 2.5em;"></i>
+				<hr style="margin: 30px 0; display: block;">
+				<h1>Cвязаться со мной</h1>
+				<form id="mail-form" action="mailto:irusya9@mail.ru" method="post" enctype="multipart/form-data" name="EmailForm">
+					<input class="input-field" type="text" name="name" placeholder="Ваше имя" required> 
+					<input class="input-field" type="email" name="email" placeholder="Ваш e-mail" required> 
+					<input class="input-field" type="tel" name="tel" placeholder="Телефон (необязательно)"> 
+					<input class="input-field" type="text" name="subject" placeholder="Тема">
+					<textarea type="text" name="message" placeholder="Сообщение" required></textarea>
+					<button type="submit">Отправить</button>
+				</form>
+			</section>
+		</main>
 	</body>
 </html>

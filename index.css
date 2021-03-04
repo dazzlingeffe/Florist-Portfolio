@@ -45,6 +45,7 @@ header {
 	font-size: 2em;
 	font-weight: bold;
 	width: 140px;
+	text-align: center;
 }
 
 #place, #burger {
@@ -211,17 +212,17 @@ ul {
 }
 
 button {
-	display: inline-block;
   cursor: pointer;
   outline: none;
-  border: 0;
-	color: #66847D;
-	background: transparent;
-	font-family: 'Helvetica Neue LT W01_41488878';
-	font-style: italic;
-	font-size: 1.1rem;
-	padding: 0;
-	margin: 0;
+  border: 1px solid #232323;
+	height: 40px;
+	width: 120px;
+	color: #232323;
+	background: none;
+	font-size: 1em;
+	padding: 10px;
+	margin: 5px;
+	text-transform: uppercase;
 }
 
 .gallery-nav-icon {
@@ -288,7 +289,7 @@ hr {
 	margin-top: 20px;
 }
 
-#main-about {
+#main-about, #main-cont {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -300,7 +301,7 @@ hr {
 	margin: 10px 20px;
 	flex: 2 0 60%;
 	order: -1;
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 h1 {
@@ -314,7 +315,7 @@ h1 {
 	line-height: 1.5;
 }
 
-#hobby, #skills, #figure {
+#hobby, #skills, #figure, #socials {
 	margin: 10px 20px;
 	padding: 20px;
 	background-color: #fff3eb;
@@ -323,16 +324,47 @@ h1 {
 	background-image: repeating-linear-gradient(45deg, #b7b7a466 0, #b7b7a466 0.5px, #fff3eb 0, #fff3eb 50%);
 }
 
-#edu {
+#edu, #reachme {
 	margin: 10px 20px;
 	flex: 2 0 40%;
 }
-#hobby, #skills {
+#hobby, #skills, #socials {
 	flex: 0 1 25%;
 }
 #skills-list, #hobby-list {
 	list-style: circle;
 	list-style-position: inside;
+}
+
+.social-link {
+	color: #232323;
+	font-size: 2em;
+	margin-right: 10px;
+}
+
+#reachme {
+	padding: 20px;
+}
+
+#mail-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.input-field, textarea {
+	border: none;
+	background: none;
+	border-bottom: 1px solid #232323;
+	height: 50px;
+	width: 250px;
+	margin: 5px;
+	outline: none;
+}
+
+textarea {
+	width: 510px;
+	height: 100px;
+	resize: vertical;
 }
 
 @media (max-width: 1200px) {
@@ -370,6 +402,7 @@ h1 {
 	}
 	#about {
 		order: 0;
+		font-size: 1.1em;
 	}
 	#figure, #about, #hobby, #edu, #skills {
 		flex: none;
