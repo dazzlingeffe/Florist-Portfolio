@@ -15,7 +15,7 @@ let openPic = function(e) {
 	
 	//add prev-btn
 	if (document.getElementById('prev') === null) {
-		gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev"></button>');
+		gallerySection.insertAdjacentHTML('beforebegin', '<button class="gallery-nav-btn" id="prev">тык</button>');
 		prevBtn = document.getElementById('prev');
 	}
 	
@@ -33,7 +33,7 @@ let openPic = function(e) {
 	
 	//add next-btn
 	if (document.getElementById('next') === null) {
-		gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next"></button>');
+		gallerySection.insertAdjacentHTML('afterend', '<button class="gallery-nav-btn" id="next">тык</button>');
 		nextBtn = document.getElementById('next');
 	}
 	
